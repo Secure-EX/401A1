@@ -1,0 +1,7 @@
+0.335375,0.286375,0.4225,0.43075,0.44925
+0.369625,0.28625,0.425,0.431,0.453
+0.362125,0.283125,0.40875,0.443875,0.45
+0.36625,0.275,0.43175,0.422625,0.457625
+0.313875,0.2885,0.43125,0.436375,0.461125
+0.000905135280818,9.95791352336e-07,0.000414854712762,0.010456061777
+Since I choose AdaBoostClassifier to compare with other four classifiers since it is the best classifier I found in part 3.1, the four p-value at line 5 is AdaBoostClassifier compared with LinearSVC, AdaBoostClassifier compared with SVC, AdaBoostClassifier compared with RandomForestClassifier and AdaBoostClassifier compared with MLPClassifier respectively. It is clear that the comparison for AdaBoostClassifier between LinearSVC, SVC and RandomForestClassifier are all smaller than 0.01, which is significant reject H0: no difference. Thus classifier AdaBoostClassifier is significantly different than LinearSVC, SVC, and RandomForestClassifier and better than them. However, the p-value that AdaBoostClassifier compared with MLPClassifier is just 0.01, which we cannot say that the AdaBoostClassifier is significantly better than MLPClassifier. The hypothesis that why AdaBoostClassifier is not significantly better than MLPClassifier may because of the alpha=0.05 attribute that set in the MLPClassifier.
